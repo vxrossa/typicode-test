@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:18.3.1"],\
+          ["swr", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:2.2.5"],\
           ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"],\
           ["vite", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:5.2.11"],\
           ["wouter", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:3.1.3"]\
@@ -1548,6 +1549,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../.yarn/berry/cache/clean-stack-npm-2.2.0-a8ce435a5c-10c0.zip/node_modules/clean-stack/",\
         "packageDependencies": [\
           ["clean-stack", "npm:2.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["client-only", [\
+      ["npm:0.0.1", {\
+        "packageLocation": "../../../../.yarn/berry/cache/client-only-npm-0.0.1-07d3e9505c-10c0.zip/node_modules/client-only/",\
+        "packageDependencies": [\
+          ["client-only", "npm:0.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3338,6 +3348,30 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["swr", [\
+      ["npm:2.2.5", {\
+        "packageLocation": "../../../../.yarn/berry/cache/swr-npm-2.2.5-3ab48a667d-10c0.zip/node_modules/swr/",\
+        "packageDependencies": [\
+          ["swr", "npm:2.2.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:2.2.5", {\
+        "packageLocation": "./.yarn/__virtual__/swr-virtual-398e0a7c88/5/.yarn/berry/cache/swr-npm-2.2.5-3ab48a667d-10c0.zip/node_modules/swr/",\
+        "packageDependencies": [\
+          ["swr", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:2.2.5"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["client-only", "npm:0.0.1"],\
+          ["react", "npm:18.3.1"],\
+          ["use-sync-external-store", "virtual:398e0a7c88e0f6c5f7db0d851502cc6699c758517749910b49c41c9eef79a614a0e409e69382cb766f89dbd1f6826ad21289397dc31238e5a215807f7838eeab#npm:1.2.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["tar", [\
       ["npm:6.2.1", {\
         "packageLocation": "../../../../.yarn/berry/cache/tar-npm-6.2.1-237800bb20-10c0.zip/node_modules/tar/",\
@@ -3461,6 +3495,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:18.3.1"],\
+          ["swr", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:2.2.5"],\
           ["typescript", "patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=5adc0c"],\
           ["vite", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:5.2.11"],\
           ["wouter", "virtual:ff7948cfed695f1abe42e419b33c3b0d1dda0878f79e19d5003f59c4794766f11b952bac0b1f804178e95191a867ec2b8844b6d9988b14ed4d211ca18d81e8e2#npm:3.1.3"]\
@@ -3539,10 +3574,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:25843f7aaf6e81008e8cba4ee9a4d3e03d20d82f62889e46889a8d680124461cc51a51d5bbd41fc6a5531712e34fd7149f867ead4f7f73ccada4b86eaf9fde57#npm:1.2.2", {\
-        "packageLocation": "./.yarn/__virtual__/use-sync-external-store-virtual-b2e3d059f2/5/.yarn/berry/cache/use-sync-external-store-npm-1.2.2-7923c915e1-10c0.zip/node_modules/use-sync-external-store/",\
+      ["virtual:398e0a7c88e0f6c5f7db0d851502cc6699c758517749910b49c41c9eef79a614a0e409e69382cb766f89dbd1f6826ad21289397dc31238e5a215807f7838eeab#npm:1.2.2", {\
+        "packageLocation": "./.yarn/__virtual__/use-sync-external-store-virtual-b7c6a2c142/5/.yarn/berry/cache/use-sync-external-store-npm-1.2.2-7923c915e1-10c0.zip/node_modules/use-sync-external-store/",\
         "packageDependencies": [\
-          ["use-sync-external-store", "virtual:25843f7aaf6e81008e8cba4ee9a4d3e03d20d82f62889e46889a8d680124461cc51a51d5bbd41fc6a5531712e34fd7149f867ead4f7f73ccada4b86eaf9fde57#npm:1.2.2"],\
+          ["use-sync-external-store", "virtual:398e0a7c88e0f6c5f7db0d851502cc6699c758517749910b49c41c9eef79a614a0e409e69382cb766f89dbd1f6826ad21289397dc31238e5a215807f7838eeab#npm:1.2.2"],\
           ["@types/react", "npm:18.3.3"],\
           ["react", "npm:18.3.1"]\
         ],\
@@ -3644,7 +3679,7 @@ const RAW_RUNTIME_STATE =
           ["mitt", "npm:3.0.1"],\
           ["react", "npm:18.3.1"],\
           ["regexparam", "npm:3.0.0"],\
-          ["use-sync-external-store", "virtual:25843f7aaf6e81008e8cba4ee9a4d3e03d20d82f62889e46889a8d680124461cc51a51d5bbd41fc6a5531712e34fd7149f867ead4f7f73ccada4b86eaf9fde57#npm:1.2.2"]\
+          ["use-sync-external-store", "virtual:398e0a7c88e0f6c5f7db0d851502cc6699c758517749910b49c41c9eef79a614a0e409e69382cb766f89dbd1f6826ad21289397dc31238e5a215807f7838eeab#npm:1.2.2"]\
         ],\
         "packagePeers": [\
           "@types/react",\
