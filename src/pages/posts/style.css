@@ -1,0 +1,9 @@
+.posts {
+  max-width: 800px;
+  margin: 20px auto 20px;
+}
+
+.posts__heading {
+  font-size: var(--heading1);
+  color: var(--deepblue);
+}

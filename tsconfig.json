@@ -22,7 +22,8 @@
     "paths": {
       "@/pages/*": ["src/pages/*"],
       "@/shared/*": ["src/shared/*"],
-      "@/entities/*": ["src/entities/*"]
+      "@/entities/*": ["src/entities/*"],
+      "@/widgets/*": ["src/widgets/*"]
     }
   },
   "include": ["src"],

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --blue: #3754ed;
+  --white: #f7fdff;
+  --offwhite: #eef3f7;
+  --deepblue: #131b62;
+  --black: #080e29;
+
+  --paragraph1: 14px;
+  --heading1: 32px;
+}
+
+html {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+}
