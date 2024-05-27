@@ -11,3 +11,10 @@
 .posts__pagination {
   margin: 20px 0 40px;
 }
+
+@media screen and (max-width: 600px) {
+  .posts {
+    width: 100%;
+    padding: 20px;
+  }
+}
