@@ -19,8 +19,10 @@ export function Posts() {
   })
 
   useEffect(() => {
-    setPage(1)
-  }, [query])
+    if (debouncedQuery.length > 0) {
+      setPage(1)
+    }
+  }, [debouncedQuery])
 
   let content
 
