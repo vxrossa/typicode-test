@@ -16,4 +16,5 @@ https://typicode-test-sandy.vercel.app/
 5. Default CSS modules for styling
 6. clsx for conditional class rendering
 
-The app does not use state management because it's not actually required
+The app does not use state management because it's not actually required. Also, the API has a maximum of about 100 posts 
+and each page gives 10 results, the amount of total pages in pagination is hardcoded
