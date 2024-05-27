@@ -7,3 +7,7 @@
   font-size: var(--heading1);
   color: var(--deepblue);
 }
+
+.posts__pagination {
+  margin: 20px 0 40px;
+}

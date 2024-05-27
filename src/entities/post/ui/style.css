@@ -13,7 +13,7 @@
     transition: all 0.3s;
 }
 
-.post:hover {
+.post__wrapper:hover {
     background: var(--offwhite);
 }
 

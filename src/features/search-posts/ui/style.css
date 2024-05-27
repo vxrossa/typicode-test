@@ -1,0 +1,14 @@
+.search-posts {
+    height: 24px;
+    padding: 4px 10px;
+    width: 280px;
+    border: 1px solid var(--blue);
+    background: var(--white);
+    color: var(--black);
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.search-posts::placeholder {
+    color: var(--blue);
+}
