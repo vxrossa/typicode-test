@@ -7,5 +7,9 @@ export const usePosts = (dto?: GetPostsDto) => {
 }
 
 export const usePost = (id: string | number) => {
-  return useSWR(`/api/posts/${id}`, () => getPost(id))
+  return useSWR(`/api/posts/${id}`, () =>
+    getPost({
+      id,
+    }),
+  )
 }

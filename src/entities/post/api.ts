@@ -1,6 +1,6 @@
 import { api } from '@/shared/api.ts'
 import { Post } from './types'
-import { GetPostsDto } from './dto'
+import { GetPostDto, GetPostsDto } from './dto'
 
 export const getPosts = async (dto?: GetPostsDto) => {
   const params = new URLSearchParams()
@@ -18,6 +18,6 @@ export const getPosts = async (dto?: GetPostsDto) => {
   }
 }
 
-export const getPost = async (id: string | number) => {
-  return await api.get<Post>(`/posts/${id}`)
+export const getPost = async (dto: GetPostDto) => {
+  return await api.get<Post>(`/posts/${dto.id}`)
 }

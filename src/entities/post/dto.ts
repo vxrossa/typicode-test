@@ -3,3 +3,7 @@ export interface GetPostsDto {
   limit?: number | string
   title?: string
 }
+
+export interface GetPostDto {
+  id: string | number
+}
