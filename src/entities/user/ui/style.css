@@ -1,0 +1,6 @@
+.user-info__text {
+    margin: 0;
+    color: var(--black);
+    opacity: 0.8;
+    font-size: var(--paragraph1);
+}

@@ -3,3 +3,15 @@
     width: 90%;
     margin: 10% auto;
 }
+
+.post__back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    margin: 20px 0;
+    font-size: var(--paragraph1);
+}
+
+.post__back-link:hover {
+    color: var(--blue);
+}

@@ -1,0 +1,13 @@
+.not-found {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.not-found__heading {
+    font-size: var(--heading1);
+    font-weight: 800;
+}

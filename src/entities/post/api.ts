@@ -9,12 +9,6 @@ export const getPosts = async (dto?: GetPostsDto) => {
     params.set('_page', dto?.page ? dto.page.toString() : '1')
   }
 
-  // if (dto?.title) {
-  //   params.set('_per_page', '100')
-  // } else {
-  //   params.set('_per_page', dto?.limit ? dto.limit.toString() : '25')
-  // }
-
   const data = await api.get<Post[]>(`/posts?${params.toString()}`)
 
   if (dto?.title) {

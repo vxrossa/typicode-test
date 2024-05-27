@@ -1,0 +1,6 @@
+.post-info__wrapper {
+    border: 1px solid var(--offwhite);
+    min-height: 180px;
+    border-radius: 8px;
+    padding: 8px;
+}

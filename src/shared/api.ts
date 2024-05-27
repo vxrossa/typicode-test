@@ -1,16 +1,18 @@
 export const baseUrl = 'https://jsonplaceholder.typicode.com'
 
 export const api = {
-  get: async <Res, T = unknown>(url: string, opts?: Omit<RequestInit, 'body'> & { body: T }): Promise<Res> => {
+  get: async <Res>(url: string, opts?: RequestInit): Promise<Res> => {
     try {
       const res = await fetch(baseUrl + url, {
         method: 'GET',
-        body: opts?.body ? JSON.stringify(opts.body) : undefined,
+        ...opts,
       })
 
-      const data: Res = await res.json()
+      if (!res.ok) {
+        throw new Error(`Request failed`)
+      }
 
-      return data
+      return await res.json()
     } catch (e) {
       throw new Error(`Request failed with error: ${e}`)
     }

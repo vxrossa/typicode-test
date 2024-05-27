@@ -1,5 +1,4 @@
-import { Post } from '@/entities/post'
-import { PostItem } from '@/entities/post/ui/Post.tsx'
+import { Post, PostItem } from '@/entities/post'
 import './style.css'
 
 interface Props {

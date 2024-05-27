@@ -20,6 +20,7 @@ export interface User {
   username: string
   email: string
   phone: string
+  name: string
   website: string
   company: UserCompany
   address: UserAddress
