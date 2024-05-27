@@ -14,8 +14,6 @@ export function PostInfo({ post, user, isLoading, isError }: Props) {
 
   if (isError) return <p>There was an error loading this post. Please try again</p>
 
-  // if (!post) return <p>No post found!</p>
-
   return (
     <article className="post-info__wrapper">
       <p className="post__title">{post?.title}</p>
