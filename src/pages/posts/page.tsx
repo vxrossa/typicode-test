@@ -1,10 +1,14 @@
 import { usePosts } from '@/entities/post'
 import './style.css'
 import { PostsList } from '@/widgets/posts-list'
+import { Pagination } from '@/shared/ui/Pagination'
+import { useParamsState } from '@/shared/lib/useParamsState.ts'
 
 export function Posts() {
+  const [page, setPage] = useParamsState<number>('page', 1)
+
   const { data, isLoading, error } = usePosts({
-    page: 2,
+    page,
   })
 
   let content
@@ -19,8 +23,9 @@ export function Posts() {
 
   return (
     <main className="posts">
-      <p className="posts__heading">List of posts</p>
+      <h1 className="posts__heading">List of posts</h1>
       {content}
+      <Pagination totalPages={10} page={page} onChange={p => setPage(p)} />
     </main>
   )
 }

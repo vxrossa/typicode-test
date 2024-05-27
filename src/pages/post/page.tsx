@@ -1,11 +1,11 @@
 import { usePost } from '@/entities/post'
 import { useUser } from '@/entities/user'
 
-interface PostPageProps {
+interface Props {
   id: number | string
 }
 
-export function Post({ id }: PostPageProps) {
+export function Post({ id }: Props) {
   const { data: postData } = usePost(id)
   const { data: userData } = useUser(postData?.userId)
 

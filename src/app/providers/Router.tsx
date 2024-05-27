@@ -1,6 +1,6 @@
 import { Route, Switch } from 'wouter'
 import { Posts } from '@/pages/posts'
-import { Post } from '@/pages/Post'
+import { Post } from '@/pages/post'
 
 export function Router() {
   return (
